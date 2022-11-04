@@ -1,0 +1,24 @@
+{
+  "name": "next-debug-serverless-function-file-serving",
+  "version": "8.3.0",
+  "private": true,
+  "homepage": "https://superpencil.com",
+  "license": "UNLICENSED",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "micro": "^9.4.1",
+    "micro-cors": "^0.1.1",
+    "next": "^12.3.0",
+    "postmark": "^3.0.14",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "stripe": "^10.15.0"
+  },
+  "devDependencies": {
+    "@types/micro-cors": "^0.1.2"
+  }
+}
