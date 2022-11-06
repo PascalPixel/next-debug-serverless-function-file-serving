@@ -1,7 +1,7 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 
-export default function hello() {
-  const [result, setResult] = React.useState(null);
+export default function Page() {
+  const [result, setResult] = useState(null);
 
   useEffect(() => {
     fetch("/api/stripe/webhooks")
