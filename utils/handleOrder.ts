@@ -2,9 +2,9 @@ import getFileBase64 from "./getFileBase64";
 
 const handleOrder = async () => {
   try {
-    const zipFile = await getFileBase64("hello.zip");
-    const jsonFile = await getFileBase64("hello.json");
-    console.log({ zipFile, jsonFile });
+    await getFileBase64("hello.zip");
+    await getFileBase64("hello.json");
+    console.log("done");
   } catch (e) {
     console.error(e);
   }
