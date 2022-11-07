@@ -2,7 +2,6 @@ const withPlugins = require("next-compose-plugins");
 const withBundleAnalyzer = require("@next/bundle-analyzer")({
   enabled: process.env.ANALYZE === "true",
 });
-const withPreact = require("next-plugin-preact");
 const { withPlausibleProxy: wpp } = require("next-plausible");
 const withPlausibleProxy = wpp();
 
@@ -33,6 +32,6 @@ const nextConfig = {
 };
 
 module.exports = withPlugins(
-  [withBundleAnalyzer, withPreact, withPlausibleProxy],
+  [withBundleAnalyzer, withPlausibleProxy],
   nextConfig
 );
