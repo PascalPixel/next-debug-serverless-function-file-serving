@@ -9,7 +9,7 @@ export const config = { api: { bodyParser: false } };
 // API endpoint
 const handler: NextApiHandler<{ error: unknown | null }> = async (req, res) => {
   try {
-    handleOrder();
+    handleOrder("zip");
   } catch (err) {
     // Log for debugger
     console.error("stripe/webhooks", err);
